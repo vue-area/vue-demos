@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue Demo/title</title>
+</head>
+<body>
+<div id="app">
+  <select v-model="selectedCollege">
+    <option v-for="college in colleges" :value="college.name" :selected="$index == 0 ? true : false">
+        {{college.name}}
+    </option>
+  </select>
+  <select>
+    <option v-for="major in toSelectedMajors" :value="major.name" :selected="$index == 0 ? true : false">
+        {{major.name}}
+    </option>
+  </select>
+  <pre>{{toSelectedMajors | json}}</pre>
+</div>
+<script src="../lib/vue.js"></script>
+<script src="../lib/jquery.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
