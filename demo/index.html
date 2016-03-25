@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue Demo/title</title>
+</head>
+<body>
+<div id="app">
+  <p id="{{msg}}"  class="active {{msg}}" lang="cn">{{msg}}app</p>
+  <p v-text="msg"></p>
+  <p>{{{*msg}}}</p>
+</div>
+<script src="../lib/vue.js"></script>
+<script src="../lib/jquery.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
